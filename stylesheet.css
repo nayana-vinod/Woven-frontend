@@ -182,7 +182,7 @@ button:hover {
   height: 100vh; /* Full height */
  
   background-color:#3B3B3B;
-  opacity: 90%;
+  opacity: 100%;
   padding-top: 30px;
 }
 
@@ -228,6 +228,66 @@ hr {
   clear: both;
   display: table;
 }
+
+/* Show Page */
+#polygonleft
+{
+/* Polygon 1 */
+position: absolute;
+top:100vh;
+height: 100vh;
+width:62vw !important;
+
+}
+#polygonright
+{
+  position:absolute;
+  width:50vw;
+  right:0;
+  top:100vh;
+  height:100vh;
+
+}
+.showtext{
+position: absolute;
+width: 300px;
+height: 291px;
+left: 40vw;
+top: 160vh;
+
+font-family: Reem Kufi;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+text-align: center;
+
+color: #3B3B3B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
