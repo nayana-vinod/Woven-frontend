@@ -1,0 +1,237 @@
+/*font families*/
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+
+body 
+{
+    width:100%;
+}
+#logo
+{
+     /* Rectangle 1*/
+
+position: absolute;
+width: 50vw;
+height: 100vh;
+left: 0px;
+top: 0;
+
+background: #3B3B3B;
+border-radius: 4px;
+/*transform: rotate(-0.32deg);*/
+}
+#desc
+{
+    /* Rectangle 2*/
+position: absolute;
+width: 50vw;
+height: 100vh;
+left: 50vw;
+top: 0;
+background: #F8CD6B;
+border-radius: 4px;
+/*transform: rotate(-0.32deg);*/
+}
+#logoimage
+{
+position: absolute;
+width: 751px;
+height: 569px;
+left:-7%;
+top:20%;
+}
+.next1{
+    position: absolute;
+    bottom:5%;
+    left:7%;
+    width:50px;
+    height:50px;
+    
+}
+.btn1{
+    position: absolute;
+    top:3%;
+    right:5%;
+    width:120px;
+    height:50px;
+    padding-bottom: 25px;
+    background: #3B3B3B;
+    mix-blend-mode: normal;
+    border-radius: 50px;
+    color: #F8CD6B;
+    text-align: center;
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px
+}
+.welcome{
+    position: absolute;
+    top:35%;
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    line-height: 26px;
+    margin-left:30px;
+    margin-right:50px;
+    color: #3B3B3B;
+}
+.welcometext{
+    position: absolute;
+/*width: 603px;
+height: 384px;
+left: 804px;*/
+top: 50%;
+
+font-family: 'Reem Kufi';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+text-align: left;
+line-height: 26px;
+margin-left:30px;
+margin-right:50px;
+color: #3B3B3B;
+}
+
+/* modal class */
+
+* {box-sizing: 70vh}
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 70%;
+  border-radius: 15px;
+  padding: 15px 40px 15px 15px;
+  margin: 45px 0px 22px 0px;
+  margin-left: 20px;
+  padding-right:40%;
+  color: aliceblue;
+  border: none;
+  background: #3B3B3B;
+}
+/* Add a padding to name,emai */
+.fr
+{
+    padding-left:50px;
+
+
+
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #F8CD6B;
+  fill-opacity: 70%;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3B3B3B;
+  color: white;
+  padding: 14px 20px;
+  
+  /*margin: 15px 0;*/
+  border: none;
+  cursor: pointer;
+  
+  opacity: 0.9;
+  border-radius: 20px;;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn{
+    margin-right:10px;
+    text-align: center;
+    padding-right: 10%;
+    width:10% !important;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  /*align-self: auto;*/
+  /*width: 70% !important;*/
+  position: absolute;
+  left:10% !important;
+  font-size: 5px;
+}
+
+/* Add padding to container elements */
+.container1 {
+  padding: 16px;
+  /*width:20%;*/
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+ 
+  background-color:#3B3B3B;
+  opacity: 90%;
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #F8CD6B;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 3px solid #3B3B3B;
+  width: 50%; /* Could be more or less, depending on screen size */
+ 
+  font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #3B3B3B;
+  margin-bottom: 25px;
+  padding-right: 10%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F8CD6B;
+}
+
+.close:hover,
+.close:focus {
+  color: #3B3B3B;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
