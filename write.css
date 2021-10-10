@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100vw;
+    background-color: #3B3B3B;
+}
+
+nav ul{
+    /* float: left; */
+    position: fixed;
+    margin-left: 20px;
+    background: #F8CD6B;
+    /* opacity: 0.83; */
+    height: 56vh;
+    width: 13vw;
+    border-radius: 10px;
+    top: 13vh;
+    left: 1vh;
+    text-align: center;
+    display: none;
+}
+
+nav ul li{
+    display: block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #3B3B3B;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav ul .active{
+    background: beige;
+    color: #3B3B3B;
+    transition: .5s;
+}
+nav ul li .hover{
+    color: beige;
+}
+nav i{
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    margin-left: 6vw;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+    display: block;
+    transition: 0.5s;
+}
+
+/* header */
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 33vh;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    /* margin: 2vh; */
+}
+
+header h2{
+    margin-bottom: 3vh;
+    font-size: 35px;
+    text-align: center;
+}
+
+.content{
+    width: 75vw;
+    font-size: 17px;
+}
+
+.content .images{
+    display: flex;
+    height: 40vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .images img{
+    width: 25vw !important;
+    height: 30vh;
+}
+
+.content span {
+    font-weight: 600;
+}
+
+.ending{
+    /* background-color: #F8CD6B; */
+    width: 100vw;
+    height: 25vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ending .sources{
+    width: 75vw;
+    height: 20vh;
+}
+.ending .links{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.ending a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.ending a:hover{
+    color: #eeb225;
+}
+
+footer{
+    background-color: #3B3B3B;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
