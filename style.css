@@ -226,3 +226,65 @@ hr {
     width: 100%;
   }
 }
+
+/* BLOG SECTION CSS */
+.blog-section {
+    width: 100vw;
+}
+.blog-section .triangles{
+    display: flex;
+}
+.blog-section .left-triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid #3B3B3B;
+    border-right: 50vw solid transparent;
+}
+
+.blog-section .right-triangle{
+    width: 0;
+      height: 0;
+      border-top: 100vh solid #F8CD6B;
+      border-left: 50vw solid transparent;
+}
+
+.blog-section-tag{
+    position: absolute;
+    width: 300px;
+    height: 291px;
+    left: 40vw;
+    top: 160vh;
+    
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    
+    color: #3B3B3B;
+}
+
+#blog .lhs {
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    }
+    #blog .rhs{
+    width: 45%;
+    }
+    
+    #blog .rhs {
+    justify-content: space-around;
+    }
+    
+    .blogleft,
+    .blogright {
+    height: 90%;
+    filter: brightness(0.7);
+    }
+    
+    .blogmiddle {
+    position: absolute;
+    height: 70%;
+    }
