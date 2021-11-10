@@ -300,11 +300,6 @@ hr {
   align-items: center;
 }
 
-.blog-section .blogs-div .blog-left,
-.blog-section .blogs-div .blog-right{
-  
-}
-
 .blog-section .blogs-div .blogs-on-sides{
   z-index: 2;
   position: absolute;
@@ -316,8 +311,4 @@ hr {
   
 }
 
-.blog-section .blogs-div .blog-middle{
-  
-  
-}
 
