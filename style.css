@@ -91,3 +91,233 @@
   color: #3B3B3B;
   }
   
+  /* modal class */
+
+* {box-sizing: 70vh}
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 70%;
+  border-radius: 15px;
+  padding: 15px 40px 15px 15px;
+  margin: 45px 0px 22px 0px;
+  margin-left: 20px;
+  padding-right:40%;
+  color: aliceblue;
+  border: none;
+  background: #3B3B3B;
+}
+/* Add a padding to name,emai */
+.fr
+{
+  padding-left:50px;
+}
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #F8CD6B;
+  fill-opacity: 70%;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3B3B3B;
+  color: white;
+  padding: 14px 20px;
+  
+  /*margin: 15px 0;*/
+  border: none;
+  cursor: pointer;
+  
+  opacity: 0.9;
+  border-radius: 20px;;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn{
+    margin-right:10px;
+    text-align: center;
+    padding-right: 10%;
+    width:10% !important;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  /*align-self: auto;*/
+  /*width: 70% !important;*/
+  position: absolute;
+  left:10% !important;
+  font-size: 5px;
+}
+
+/* Add padding to container elements */
+.container1 {
+  padding: 16px;
+  /*width:20%;*/
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+ 
+  background-color:#3B3B3B;
+  opacity: 100%;
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #F8CD6B;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 3px solid #3B3B3B;
+  width: 50%; /* Could be more or less, depending on screen size */
+ 
+  font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #3B3B3B;
+  margin-bottom: 25px;
+  padding-right: 10%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F8CD6B;
+}
+
+.close:hover,
+.close:focus {
+  color: #3B3B3B;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/* BLOG SECTION CSS */
+.blog-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.blog-section .triangles{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+.blog-section .left-triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid #3B3B3B;
+    border-right: 50vw solid transparent;
+}
+
+.blog-section .right-triangle{
+    width: 0;
+    height: 0;
+    border-top: 100vh solid #F8CD6B;
+    border-left: 50vw solid transparent;
+}
+
+.blog-section-tag{
+    width: 30vw;
+    height: 10vh;
+    
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    
+    color: #f3ba36;
+}
+
+.blog-section-para{
+  width: 30vw;
+  margin-top: 4vh;
+
+  font-size: 2rem;
+  text-align: center;
+  
+
+  color: #3B3B3B;
+}
+
+.blog-section .contents{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.blog-section .tag-div{
+  width: 25vw;
+  height: 40vh;
+  margin-top: 8vh;
+}
+
+.blog-section .blogs-div{
+  width: 45vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-section .blogs-div .blog-left,
+.blog-section .blogs-div .blog-right{
+  
+}
+
+.blog-section .blogs-div .blogs-on-sides{
+  z-index: 2;
+  position: absolute;
+}
+
+.blog-section .blogs-div .blog-on-middle{
+  z-index: 3;
+  position: absolute;
+  
+}
+
+.blog-section .blogs-div .blog-middle{
+  
+  
+}
+
