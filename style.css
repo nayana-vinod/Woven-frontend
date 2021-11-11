@@ -1,9 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
-
+/* GENRAL CSS */
 *{
     margin: 0;
 }
+.community-section, .spotlight-section,
+.write-section, .blog-section, .ghost-section{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
 
+.contents .images{
+  width: 55vw;
+}
+
+.contents .texts{
+  width: 35vw;
+  height: 40vh;
+}
+
+.contents .title{
+  width: 30vw;
+  height: 10vh;
+  
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.contents .para{
+  width: 30vw;
+  margin-top: 8vh;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* LANDING PAGE CSS */
 .landing-page{
     display: flex;
     height: 100vh;
@@ -20,6 +54,15 @@
   height: 100vh;
     width: 50vw;
     background-color: #F8CD6B;
+}
+
+.landing-page .triangles{
+  margin-top: 70vh;
+  margin-left: 30vw;
+  width: 40vw;
+  height: 40vh;
+  background-color: #3B3B3B;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 #about{
@@ -191,7 +234,7 @@ button:hover {
     font-size: 13px;
 }
 
-/* Style the horizontal ruler */
+/* Style the horizontal line */
 hr {
   border: 1px solid #3B3B3B;
   margin-bottom: 25px;
@@ -229,11 +272,6 @@ hr {
 }
 
 /* BLOG SECTION CSS */
-.blog-section {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
 .blog-section .triangles{
     display: flex;
     z-index: 1;
@@ -314,11 +352,6 @@ hr {
 }
 
 /* WRITE_SECTION CSS */
-.write-section{
-  height: 100vh;
-  position: relative;
-}
-
 .write-section .white-box{
   width: 50vw;
 }
@@ -347,45 +380,15 @@ hr {
   align-items: center;
 }
 
-.write-section .contents .girl-write{
-  width: 55vw;
-}
-
-.write-section .tag-div{
-  width: 35vw;
-  height: 40vh;
-}
-
-.write-section .write-section-title{
+.write-section .title{
   color: #3B3B3B;
-  
-  width: 30vw;
-  height: 10vh;
-  
-  font-size: 4rem;
-  line-height: 5rem;
-  text-align: center;
-  font-weight: bolder;
 }
 
-.write-section .write-section-para{
-  width: 30vw;
-  margin-top: 8vh;
-
-  font-size: 2rem;
-  text-align: center;
-
+.write-section .para{
   color: #3B3B3B;
 }
 
 /* GHOST_SECTION CSS */
-
-.ghost-section{
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
 .ghost-section .black-box{
   position: absolute;
   height: 100vh;
@@ -402,4 +405,82 @@ hr {
   border-right: 25vw solid transparent;
   
   border-top: 50vh solid #F8CD6B; 
+}
+
+.ghost-section .contents{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  /* color: #F8CD6B; */
+}
+
+.ghost-section .title{
+  color: #F8CD6B;
+}
+
+.ghost-section .para{
+  color: white;
+}
+
+.community-section .black-box{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #3B3B3B;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+}
+
+.community-section .contents{
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SPOTLIGHT SECTION CSS */
+.spotlight-section .triangle-down{
+  position: absolute;
+  margin-left: 70vw;
+  width: 20vw;
+  height: 20vh;
+  background-color: #F8CD6B;
+  clip-path: polygon(100% 0, 0 0, 49% 100%);
+}
+.spotlight-section .contents{
+  width: 100vw;
+  height: 75vh;
+  
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.spotlight-section .images{
+  margin-top: 26vh;
+}
+
+.spotlight-section .texts{
+  margin-top: 10vh;
+}
+
+.spotlight-section .black-box{
+  height: 25vh;
+  width: 100vw;
+  background-color: #3B3B3B;
+}
+
+.spotlight-section .black-box .h3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+  width: 100vw;
+  align-items: center;
+  color: white;
 }
